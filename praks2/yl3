@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#muljed teisest tunnist
+#
+echo "Adelii Martin"
+echo "ISP117"
+echo "Aine on väga põnev ja näitab, kui palju erinevaid vigu võib inimene teha."
+echo "Olen aru saanud erinevate märkide erinevusest."
+#
+#lõpp
+
