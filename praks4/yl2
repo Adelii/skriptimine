@@ -1,0 +1,36 @@
+#!/bin/bash
+#
+#Tort
+#
+# Kandiku pindala
+echo "Sisestage kandiku pikkus:"
+read pikkus 
+echo "Sisestage kandiku laius:"
+read laius
+echo "Sisestage küpsiste pikkus:"
+read kpikkus
+echo "Sisestage küpsiste laius:"
+read klaius
+echo "Mitu küpsist on pakkis?:"
+read mitu
+echo "Mitu kihti?:"
+read kihtide_arv
+
+# Kandiku pindala
+pindala=`expr $pikkus \* $laius`
+# Küpsiste pindala
+kogus=`expr $kpikkus \* $klaius`
+# Mitu küpsist ühes kihis
+yheskihis=`expr $pindala / $kogus`
+
+echo "Kandiku pindala on $pindala cm ja küpsiste pindala $kogus cm, ühes kihis on $yheskihis küpsist"
+
+# Mitu pakki küpsiseid on vaja, et täita üks kiht
+yheskihispakke=`expr $yheskihis / $mitu`
+
+# Kokku pakke
+kokku=`expr $yheskihispakke \* $kihtide_arv`
+
+# Palju pakke vaja on
+echo "Teil on vaja ostapoest $kokku pakki"
+
