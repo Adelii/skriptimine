@@ -3,7 +3,7 @@
 #Tervitus
 #
 echo -n "Sisesta oma ees- ja perenimi:"
-read  adelii martin
-echo -n "Sinu eesnimi on adelii ja perenimi on martin"
+read  Eesnimi Perenimi
+echo -n "Sinu eesnimi on $Eesnimi ja perenimi on $Perenimi"
 #
 #
