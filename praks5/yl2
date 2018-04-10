@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# Kolmnurga pndala
+#
+# Algus
+#
+echo
+echo -n "Sisesta a kylje väärtus: "
+read a
+echo -n "Sisesta b kylje väärtus: "
+read b
+echo -n "Sisest c kylje väärtus: "
+read c
+#
+# Arvutamine
+#
+p= `echo "scale=2;($a+$b+$c)/2" | bc`  #pindala
+s=`echo "scale=2;sqrt($p*($p-$a)*($p-$b)*($p-$c))" | bc`
+echo "Pindala = $s"
+#
+# Lõpp
