@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# Reisilt tagasi tuleku arvutamine
+#
+# Algus
+echo "Pyhapäev - 0, Esmaspäev - 1, ..., Laupäev -6"
+# Küsime andmed
+echo -n #Sisesta millal ära sõidad:"
+read reisi_algus
+# Palju reisisid
+echo -n "Sisesta reisi ööpäevade arv:"
+read päevad
+#
+# arvutused
+#
+#arvutamine reisimise nädalate arvud ja vaatame palju üle jääb
+veel_reisi_päevad=$(($päevad %7))
+# jäänud päevad liidame
+# sellega saame algusesse tagasi
+tagasi=$(($reisi_algus+$veel_reisi_päevad))
+#
+#
+# Tulmuse väljastamine
+#
+echo "Tagasi oled päeval $tagasi"
+#
+# Lõpp
+
+
