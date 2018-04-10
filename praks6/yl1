@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Paarsuse kontroll
+#
+# Kasutaja sisestab arvu
+echo -n "Sisesta täisarv: "
+read arv
+# arvutame jääk 2ga jagamisel
+jääk=$(( $arv % 2 ))
+# 4 % 2=0 -> paaris
+# 5 % 2=1 -> paaritu
+# if lause algus
+# kas arv on paarisarv
+if [ $jääk -eq 0 ]
+then
+	#arv on paaris
+	echo "$arv on paaris"
+# muidu
+else
+	# arv on paaritu
+	echo "$arv on paaritu"
+# if lause lõpp
+fi
+echo "programmi lõpp"
+
