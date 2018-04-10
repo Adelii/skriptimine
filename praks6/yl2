@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# Bussiekskursiooni korraldajatele
+#
+#
+read -p "Kui palju on reisjaid kokku?: " reisijad
+read -p "Kui palju on bussis kohti?: " bussis
+a1=`expr $reisijad \/ $bussis `
+a2=`expr $a1 \+ 1`
+if (($reisijad % $bussis == 0 ))
+then
+	echo "Vaja tellida $a1 bussi"
+else
+	echo "Vaja tellida $a2 bussi"
+fi
+# Lõpp
+
+
