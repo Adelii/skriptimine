@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+#Algus
+echo -n "Sisestage kellaaeg: "
+read aeg
+
+if [ $aeg -ge 6 -a $aeg -le 11 ] #Kell on vahemikus 6-12
+then
+	echo "Tere Hommikust"
+elif [ $aeg -ge 12 -a $aeg -le 17 ] #Kell on vahemikus 12-18
+then
+	echo "Tere päevast"
+elif [ $aeg -ge 18 -a $aeg -le 21 ] #Kell on vahemikus 18-22
+then
+	echo "Tere õhtust"
+elif [ $aeg -ge 22 -a $aeg -le 5 ] #Kell on vahemikus 22-6
+then
+	echo "Head ööd!"
+fi
