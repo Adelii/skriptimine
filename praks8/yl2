@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# numbrite summa
+#
+echo -n "Sisestage suvaline täisarv:"
+read arv
+summa=0
+while [ $arv -ne 0 ] #nii kaua kui arv ei võrdu 0
+do
+	jaak=$(($arv % 10)) #jagatakse kümnega
+	summa=$(($summa + $jaak))
+	arv=$(($arv / 10))
+done
+echo "$summa"
+#
+# lõpp
