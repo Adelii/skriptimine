@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# Tsüklid 1
+#
+for (( i = 1; i <= 5; i++ ))  ### Outer for  loop ###
+do
+	echo -n "$i "
+	for (( j = 1; j <= 5; j++ )) ### Inner for loop ###
+	do
+		echo -n "* "
+	done
+echo "" #### print the new line ###
+done
+#
+#
+# Lõpp
